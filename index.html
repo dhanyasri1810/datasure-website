@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataSure | Smarter Compliance. Safer Data.</title>
+<style>
+:root {
+  --navy: #07152f;
+  --blue: #2563eb;
+  --cyan: #38bdf8;
+  --muted: #64748b;
+  --light: #f3f7fc;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #17233b;
+  background: white;
+}
+nav {
+  background: var(--navy);
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.logo { font-size: 26px; font-weight: 800; }
+.logo span { color: var(--cyan); }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.hero {
+  background: linear-gradient(125deg, #07152f, #123b79);
+  color: white;
+  padding: 110px 8%;
+  text-align: center;
+}
+.tag {
+  display: inline-block;
+  border: 1px solid #4775ae;
+  border-radius: 30px;
+  padding: 9px 18px;
+  color: #a5dcff;
+  font-size: 13px;
+}
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin: 25px auto;
+  max-width: 850px;
+  line-height: 1.13;
+}
+.hero h1 span { color: var(--cyan); }
+.hero p {
+  color: #c9d9ed;
+  max-width: 660px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+}
+.btn {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 14px 26px;
+  border: 0;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover { background: #1d4ed8; }
+.btn-outline {
+  background: transparent;
+  border: 1px solid #94b7e4;
+  margin-left: 10px;
+}
+section { padding: 85px 8%; }
+.section-title {
+  text-align: center;
+  font-size: 35px;
+  margin: 0 0 14px;
+}
+.subtitle {
+  text-align: center;
+  color: var(--muted);
+  max-width: 650px;
+  margin: 0 auto 45px;
+  line-height: 1.7;
+}
+.about { background: white; }
+.about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.9;
+  color: #475569;
+}
+.features { background: var(--light); }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e3ebf5;
+  box-shadow: 0 5px 20px #0f172a08;
+  transition: transform .2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card .symbol { font-size: 32px; }
+.card h3 { margin: 20px 0 10px; }
+.card p { color: var(--muted); line-height: 1.7; }
+.demo { background: white; }
+.demo-box {
+  max-width: 850px;
+  margin: auto;
+  padding: 35px;
+  background: var(--light);
+  border: 1px solid #dce7f5;
+  border-radius: 18px;
+}
+textarea {
+  width: 100%;
+  min-height: 135px;
+  padding: 17px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  resize: vertical;
+  font: inherit;
+  margin: 15px 0;
+}
+.output {
+  background: white;
+  border: 1px solid #cbd5e1;
+  padding: 20px;
+  min-height: 75px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin-top: 20px;
+}
+.note { font-size: 13px; color: var(--muted); }
+.contact {
+  text-align: center;
+  background: #eaf2ff;
+}
+.contact p { color: #475569; line-height: 1.8; }
+footer {
+  background: var(--navy);
+  color: #a9bdd7;
+  padding: 30px 8%;
+  text-align: center;
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  nav { justify-content: center; text-align: center; }
+  nav a { margin: 0 8px; }
+  .hero { padding: 75px 6%; }
+  section { padding: 65px 6%; }
+  .btn-outline { margin: 12px 0 0; }
+  .demo-box { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Data<span>Sure</span></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#demo">Demo</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="tag">AI-Powered Regulatory Intelligence</div>
+  <h1>Smarter Compliance.<br><span>Safer Data.</span></h1>
+  <p>
+    Transforming regulatory workflows with intelligent
+    document processing, automated privacy protection,
+    and AI-driven compliance assistance.
+  </p>
+  <a class="btn" href="#demo">Explore Demo →</a>
+  <a class="btn btn-outline" href="#features">Our Solutions</a>
+</header>
+
+<section class="about" id="about">
+  <h2 class="section-title">What is DataSure?</h2>
+  <p class="subtitle">
+    Simplifying complex compliance processes through AI.
+  </p>
+  <p>
+    DataSure is an AI-powered regulatory workflow automation
+    and data anonymisation solution designed for healthcare,
+    research, and regulatory organisations.
+    <br><br>
+    Our vision is to reduce repetitive documentation work,
+    identify sensitive information, improve document
+    consistency, and support faster regulatory reviews
+    while keeping data privacy at the forefront.
+  </p>
+</section>
+
+<section class="features" id="features">
+  <h2 class="section-title">Intelligence Meets Compliance</h2>
+  <p class="subtitle">
+    One platform designed to simplify regulatory
+    documentation and protect sensitive information.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="symbol">🛡️</div>
+      <h3>Data Anonymisation</h3>
+      <p>Detect and mask sensitive personal information
+      to support privacy-conscious document handling.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">📄</div>
+      <h3>AI Summarisation</h3>
+      <p>Turn lengthy regulatory documents into
+      structured and easy-to-review summaries.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">✅</div>
+      <h3>Compliance Assistance</h3>
+      <p>Identify potentially missing information
+      and support document completeness checks.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">🔎</div>
+      <h3>Document Comparison</h3>
+      <p>Highlight inconsistencies between documents
+      and help reviewers spot important changes.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">⚙️</div>
+      <h3>Workflow Automation</h3>
+      <p>Reduce repetitive manual work through
+      intelligent regulatory document workflows.</p>
+    </div>
+
+    <div class="card">
+      <div class="symbol">📊</div>
+      <h3>Reviewer Assistance</h3>
+      <p>Help teams organise, review, and
+      interpret regulatory documentation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="demo" id="demo">
+  <h2 class="section-title">Experience DataSure</h2>
+  <p class="subtitle">
+    Try our interactive privacy-checker prototype.
+  </p>
+
+  <div class="demo-box">
+    <h3>🔐 Smart Data Privacy Checker</h3>
+    <p>
+      Enter fictional sample text containing an email
+      address or Indian mobile number.
+      Our prototype will mask the detected information.
+    </p>
+
+    <label for="inputText"><b>Sample Input</b></label>
+    <textarea id="inputText">Contact Priya at priya@example.com or call 9876543210 for further details.</textarea>
+
+    <button class="btn" onclick="checkPrivacy()">
+      Analyse & Anonymise →
+    </button>
+
+    <h3>Processed Output</h3>
+    <div class="output" id="result" aria-live="polite">
+      Your anonymised text will appear here.
+    </div>
+
+    <p class="note">
+      Prototype demonstration only. This is a
+      browser-based pattern checker, not a complete
+      AI compliance system. Do not enter real
+      personal, confidential, or medical data.
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Let's Build a Safer Digital Future</h2>
+  <p>
+    Interested in DataSure or exploring a collaboration?
+    <br>Connect with our team to learn more.
+  </p>
+  <a class="btn" href="mailto:YOUR_EMAIL@example.com">
+    Contact Our Team →
+  </a>
+  <p class="note">
+    DataSure is currently in the concept and
+    prototype development stage.
+  </p>
+</section>
+
+<footer>
+  © 2026 DataSure. All rights reserved.
+  <br><br>
+  AI-Driven Regulatory Workflow Automation & Data Anonymisation
+</footer>
+
+<script>
+function checkPrivacy() {
+  const input = document.getElementById("inputText").value;
+  const result = document.getElementById("result");
+
+  if (!input.trim()) {
+    result.textContent = "Please enter some sample text.";
+    return;
+  }
+
+  let output = input;
+
+  // Mask common email patterns.
+  output = output.replace(
+    /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi,
+    "[EMAIL REDACTED]"
+  );
+
+  // Mask common Indian mobile-number formats.
+  output = output.replace(
+    /(?<!\d)(?:(?:\+91|91)[\s-]?)?[6-9]\d{9}(?!\d)/g,
+    "[PHONE REDACTED]"
+  );
+
+  result.textContent = output;
+
+  if (output === input) {
+    result.textContent =
+      "No supported email or phone patterns detected.\n\n" +
+      input;
+  }
+}
+</script>
+
+</body>
+</html>
